@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 100rem;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+.description {
+    max-width: 40em;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.description,
+picture {
+    margin-top: 1em;
+}
+
+.description:first-child {
+    margin-top: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 75em) {
+    main {
+        flex-wrap: nowrap;
+    }
+
+    .description {
+        width: 40%;
+    }
+
+    picture {
+        width: 50%;
+    }
+}
